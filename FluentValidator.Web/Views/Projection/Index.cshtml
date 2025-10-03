@@ -1,0 +1,22 @@
+﻿@model FluentValidator.Web.DTOs.EventDateDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-action="Index" method="post">
+        <input asp-for="Day" />
+        <input asp-for="Month" />
+        <input asp-for="Year" />
+        <input type="submit" value="Kaydet" />
+    </form>
+    <h1>@ViewBag.date</h1>
+</body>
+</html>
